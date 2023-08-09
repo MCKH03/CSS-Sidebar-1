@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Linking the CSS -->
+    <link rel="stylesheet" href="css/comp.css" />
+
+    <!-- Adding Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/favicon/android-chrome-192x192.png"
+    />
+    <title>Sidebar 1</title>
+  </head>
+  <body
+    class="flex items-center justify-center font-fredoka font-normal text-white text-2xl"
+  >
+    <div class="w-[25rem] h-screen bg-pirate bg-cover bg-center">
+      <!--  Sidebar Container -->
+      <div
+        class="h-full w-[21rem] backdrop-blur bg-gradient-to-b from-white19 to-white06 p-9 relative sidebar unactive transition-all duration-500"
+      >
+        <!-- Account name and logo  -->
+        <div
+          class="flex items-center h-24 gap-9 pb-9 mb-6 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:absolute after:bottom-0 relative account-box"
+        >
+          <svg
+            class="w-8 h-8 absolute -right-7 top-8 translate-x-1/2 -translate-y-1/2 -rotate-90 bg-[rgba(0,0,0,0.6)] rounded-full hover:cursor-pointer exp-btn transition-all duration-500"
+          >
+            <use xlink:href="assets/icons/sprite.svg#arrow"></use>
+          </svg>
+          <figure
+            class="h-full p-2 rounded-full before:h-full before:w-full before:bg-black before:opacity-50 before:rounded-full before:absolute before:left-0 before:top-0 before:z-10 relative flex-shrink-0 logo-box"
+          >
+            <img
+              src="/assets/img/logo.png"
+              alt="WWHCoder Logo"
+              class="w-auto h-full z-20 relative"
+            />
+          </figure>
+          <div class="flex flex-col gap-1 flex-shrink-0">
+            <p class="text-2xl font-bold text transition-all duration-500">
+              WWHCoder
+            </p>
+            <p
+              class="text-gray-800 text-lg font-bold transition-all duration-500 text"
+            >
+              Mehrshad Ch. Kh.
+            </p>
+          </div>
+        </div>
+        <!-- List and log out container -->
+        <div class="flex flex-col gap-11 list-logout-container">
+          <!-- Sidebar list -->
+          <ul
+            class="flex flex-col gap-10 pb-9 justify-center pl-4 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:absolute after:bottom-0 after:left-0 relative"
+          >
+            <li>
+              <a
+                href="#"
+                class="flex gap-9 items-center transition-all duration-300"
+              >
+                <svg class="w-8 h-8 flex-shrink-0">
+                  <use xlink:href="/assets/icons/sprite.svg#home"></use>
+                </svg>
+                <span class="text transition-all duration-700">Home</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex gap-9 items-center transition-all duration-300"
+              >
+                <svg class="w-8 h-8 flex-shrink-0">
+                  <use xlink:href="/assets/icons/sprite.svg#post"></use>
+                </svg>
+                <span class="text transition-all duration-700">Post</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex gap-9 items-center transition-all duration-300"
+              >
+                <svg class="w-8 h-8 flex-shrink-0">
+                  <use xlink:href="/assets/icons/sprite.svg#mail"></use>
+                </svg>
+                <span class="text transition-all duration-700">Messages</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex gap-9 items-center transition-all duration-300"
+              >
+                <svg class="w-8 h-8 flex-shrink-0">
+                  <use xlink:href="/assets/icons/sprite.svg#friends"></use>
+                </svg>
+                <span class="text transition-all duration-700">Friends</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex gap-9 items-center transition-all duration-300"
+              >
+                <svg class="w-8 h-8 flex-shrink-0">
+                  <use xlink:href="/assets/icons/sprite.svg#bell"></use>
+                </svg>
+                <span class="text transition-all duration-700"
+                  >Notifications</span
+                >
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex gap-9 items-center transition-all duration-300"
+              >
+                <svg class="w-8 h-8 flex-shrink-0">
+                  <use xlink:href="/assets/icons/sprite.svg#people"></use>
+                </svg>
+                <span class="text transition-all duration-700">People</span>
+              </a>
+            </li>
+          </ul>
+          <!-- Log out  -->
+          <a
+            href="#"
+            class="flex gap-9 pl-4 items-center transition-all duration-300 flex-grow pt-9"
+          >
+            <svg class="w-8 h-8 flex-shrink-0">
+              <use xlink:href="/assets/icons/sprite.svg#exit"></use>
+            </svg>
+            <p class="text transition-all duration-700">Logout</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

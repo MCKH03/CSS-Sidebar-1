@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Fredoka";
+    src: local("Fredoka Bold"),
+      url("/assets/webfont/Fredoka-Bold.woff2") format("woff2"),
+      url("/assets/webfont/Fredoka-Bold.woff") format("woff");
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: "Fredoka";
+    src: local("Fredoka Regular"),
+      url("/assets/webfont/Fredoka-Regular.woff2") format("woff2"),
+      url("/assets/webfont/Fredoka-Regular.woff") format("woff");
+    font-weight: 400;
+  }
+
+  .sidebar.unactive {
+    width: 7.3rem;
+    padding: 36px 28px;
+  }
+
+  .sidebar.unactive .text {
+    opacity: 0;
+    transition: all 0.2s;
+  }
+
+  .sidebar.active .exp-btn {
+    right: -50px;
+
+    transform: rotate(90deg);
+  }
+}
