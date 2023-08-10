@@ -6,16 +6,16 @@
   @font-face {
     font-family: "Fredoka";
     src: local("Fredoka Bold"),
-      url("/assets/webfont/Fredoka-Bold.woff2") format("woff2"),
-      url("/assets/webfont/Fredoka-Bold.woff") format("woff");
+      url("./assets/webfont/Fredoka-Bold.woff2") format("woff2"),
+      url("./assets/webfont/Fredoka-Bold.woff") format("woff");
     font-weight: 700;
   }
 
   @font-face {
     font-family: "Fredoka";
     src: local("Fredoka Regular"),
-      url("/assets/webfont/Fredoka-Regular.woff2") format("woff2"),
-      url("/assets/webfont/Fredoka-Regular.woff") format("woff");
+      url("./assets/webfont/Fredoka-Regular.woff2") format("woff2"),
+      url("./assets/webfont/Fredoka-Regular.woff") format("woff");
     font-weight: 400;
   }
 

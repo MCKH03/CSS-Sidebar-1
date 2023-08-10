@@ -19,7 +19,7 @@ module.exports = {
         fredoka: ["'Fredoka'", ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: {
-        pirate: "url('/assets/img/background.jpg')",
+        pirate: "url('./assets/img/background.jpg')",
       },
       colors: {
         white19: "rgba(255,255,255, 0.19)",
