@@ -11,7 +11,7 @@ const withOpacity = function (variableName) {
 };
 
 module.exports = {
-  content: ["./index.html"],
+  content: ["./index.html", "./main.js"],
   theme: {
     extend: {
       fontFamily: {
